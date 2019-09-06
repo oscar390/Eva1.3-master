@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Eva1</string>
+    <string name="BotonSiguiente">Siguiente</string>
+    <string name="tv1">Figuras Geometricas</string>
+    <string name="BotonAnterior">Anterior</string>
+    <string name="tv2">Cuadrado</string>
+    <string name="tv3">Cuadrado</string>
+    <string name="BotonRegresar">Regresar</string>
+
+</resources>

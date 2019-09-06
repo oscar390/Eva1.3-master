@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Figuras">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <!-- Cuadrado -->
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Ingresar Valores solicitados"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="@string/tv2"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/valorcuadrado1"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+
+                <EditText
+                    android:id="@+id/textView1"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Resultado"
+                    android:textColor="#D32F2F"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cuadrado"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_area"
+                    android:textColor="@android:color/white"
+                    android:text="Área" />
+
+
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_perimetro"
+                    android:textColor="@android:color/white"
+                    android:text="Perímetro" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Calcular_diagonal"
+                    android:text="Diagonal"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <!-- Rectángulo -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:text="Rectángulo"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/valorrectangulo1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/valorrectangulo2"
+                    android:layout_width="59dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+
+
+                <EditText
+                    android:id="@+id/textView58"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#D32F2F"
+                    android:textSize="20sp"
+                    android:inputType="number|numberSigned|numberDecimal"
+                    android:text="Resultado" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rectangulo"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnarearec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_area_rectangulo"
+                    android:text="Área"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_perimetro_rectangulo"
+                    android:text="Perímetro"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_diagonal_rectangulo"
+                    android:text="Diagonal"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <!-- Círculo -->
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textColor="#D32F2F"
+                    android:textSize="20sp"
+                    android:inputType="textPersonName"
+                    android:text="Resultado" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="Círculo"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circulo"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_area_circulo"
+                    android:textColor="@android:color/white"
+                    android:text="Área" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:onClick="Calcular_perimetro_circulo"
+                    android:text="Circunferencia" />
+
+
+
+                <Button
+                    android:id="@+id/button28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:onClick="Calcular_diametro_circulo"
+                    android:text="Diámetro" />
+
+            </LinearLayout>
+
+
+            <!-- Triángulo (Equilátero) -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:text="Triángulo (Equilátero)"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/valorequilatero1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+
+
+
+
+                <EditText
+                    android:id="@+id/textView23"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#D32F2F"
+                    android:textSize="20sp"
+                    android:inputType="number|numberSigned|numberDecimal"
+                    android:text="Resultado" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/equilatero"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnareaequi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_area_equilatero"
+                    android:textColor="@android:color/white"
+                    android:text="Área" />
+
+                <Button
+                    android:id="@+id/button26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_perimetro_equilatero"
+                    android:textColor="@android:color/white"
+                    android:text="Perímetro" />
+
+                <Button
+                    android:id="@+id/button30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Calcular_perimetro_semiequilatero"
+                    android:text="Semiperímetro"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <!-- Termino Triángulo (Equilátero) -->
+
+
+            <!-- Triángulo (Isóceles) -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:text="Triángulo (Isóceles)"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/valorisoceles1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/valorisoceles2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+
+
+
+                <EditText
+                    android:id="@+id/textView25"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#D32F2F"
+                    android:textSize="20sp"
+                    android:inputType="number|numberSigned|numberDecimal"
+                    android:text="Resultado" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/isoceles"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnareaiso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_area_isoceles"
+                    android:textColor="@android:color/white"
+                    android:text="Área" />
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_perimetro_isoceles"
+                    android:textColor="@android:color/white"
+                    android:text="Perímetro" />
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Calcular_semiperimetro_isoceles"
+                    android:text="Semiperímetro"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <!-- Termino Triángulo (Isóceles) -->
+
+
+            <!-- Triángulo (Escaleno) -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:text="Triángulo (Escaleno)"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/valorescaleno1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/valorescaleno2"
+                    android:layout_width="59dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+
+
+                <EditText
+                    android:id="@+id/valorescaleno3"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+
+
+                <EditText
+                    android:id="@+id/textView27"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#D32F2F"
+                    android:textSize="20sp"
+                    android:inputType="number|numberSigned|numberDecimal"
+                    android:text="Resultado" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/escaleno"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnareaesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_area_escaleno"
+                    android:textColor="@android:color/white"
+                    android:text="Área" />
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_perimetro_escaleno"
+                    android:textColor="@android:color/white"
+                    android:text="Perímetro" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Calcular_semiperimetro_escaleno"
+                    android:text="Semiperímetro"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <!-- Termino Triángulo (Escaleno) -->
+
+
+            <!-- Rombo -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:text="Rombo"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/valorrombo1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/valorrombo2"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/valorrombo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/valorrombo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Valor"
+                    android:inputType="number|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editText77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textColor="#D32F2F"
+                    android:inputType="textPersonName"
+                    android:text="Resultado"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rombo"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_area_rombo"
+                    android:textColor="@android:color/white"
+                    android:text="Área" />
+
+                <Button
+                    android:id="@+id/button25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Calcular_perimetro_rombo"
+                    android:textColor="@android:color/white"
+                    android:text="Perimetro" />
+
+
+                <Button
+                    android:id="@+id/Anterior"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Anterior"
+                    android:background="@color/colorRegresar"
+                    android:text="@string/BotonAnterior"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
